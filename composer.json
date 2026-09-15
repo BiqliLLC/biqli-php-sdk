@@ -1,0 +1,31 @@
+{
+    "name": "biqli/sdk",
+    "description": "Server-side PHP SDK for Biqli conversion tracking",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://biq.li",
+    "support": {
+        "docs": "https://learn.biq.li/docs/api-reference/sdks/php",
+        "issues": "https://github.com/BiqliLLC/biqli-php-sdk/issues",
+        "source": "https://github.com/BiqliLLC/biqli-php-sdk"
+    },
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biqli\\Sdk\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "keywords": [
+        "biqli",
+        "conversions",
+        "tracking",
+        "analytics",
+        "sdk"
+    ]
+}

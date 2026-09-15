@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 use Biqli\Sdk\Biqli;
 
+// In Laravel 11+, add this to bootstrap/app.php so Laravel can read the
+// browser SDK's plain attribution cookie:
+// $middleware->encryptCookies(except: ['bq_id']);
+
 $biqli = new Biqli(
     apiKey: (string) config('services.biqli.api_key'),
     options: [
